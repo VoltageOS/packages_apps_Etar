@@ -64,17 +64,17 @@ android_app {
     kotlincflags: ["-Xjvm-default=all"],
 
     required: [
-        "org.lineageos.etar.allowlist",
+        "com.voltageos.etar.allowlist",
         "initial-package-stopped-states-org.lineageos.etar",
         "preinstalled-packages-org.lineageos.etar",
     ],
 }
 
 prebuilt_etc {
-    name: "org.lineageos.etar.allowlist",
+    name: "com.voltageos.etar.allowlist",
     product_specific: true,
     sub_dir: "sysconfig",
-    src: "org.lineageos.etar.allowlist.xml",
+    src: "com.voltageos.etar.allowlist.xml",
     filename_from_src: true,
 }
 
